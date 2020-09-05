@@ -36,11 +36,11 @@ Repositório do teste de uma aplicação para uma API do teste da Salvus.
 - timestamps: Indica a data e a hora de criação e edição do registro. Na coleção se apresenta em dois registros: createdAt e updatedAt.
 
 **app.js:** Nesse arquivo encontra-se a conexão com o MongoDB e as cinco rotas solicitadas para esse teste:
-- Método HTTP GET + /api/patients: A partir do método GET mais a URL /api/patients retorna-se com status 200 a lista de registros de pacientes no MongoDB ou acusa-se um erro com status 400 de nenhum paciente encontrado;
-- Método HTTP GET + /api/patients/:id: A partir do método GET mais a URL /api/patients/:id retorna-se com status 200 o registro de um paciente especificado pelo id ou acusa-se um erro com status 400 de paciente não encontrado;
-- Método HTTP POST + /api/patients: A partir do método POST mais a URL /api/patients realiza-se com status 200 a criação de um registro de um paciente no MongoDB ou acusa-se um erro com status 400 de paciente não cadastrado;
-- Método HTTP PUT + /api/patients/:id: A partir do método PUT mais a URL /api/patients/:id realiza-se com status 200 a edição de um registro de um paciente especificado pelo id no MongoDB ou acusa-se um erro com status 400 de paciente não editado com sucesso;
-- Método HTTP DELETE + /api/patients/:id: A partir do método DELETE mais a URL /api/patients/:id realiza-se com status 200 a exclusão de um registro de um paciente especificado pelo id no MongoDB ou acusa-se um erro com status 400 de paciente não excluído.
+- Método HTTP GET + /api/patients: A partir do método GET mais o endpoint /api/patients retorna-se com status 200 a lista de registros de pacientes no MongoDB ou acusa-se um erro com status 400 de nenhum paciente encontrado;
+- Método HTTP GET + /api/patients/:id: A partir do método GET mais o endpoint /api/patients/:id retorna-se com status 200 o registro de um paciente especificado pelo id ou acusa-se um erro com status 400 de paciente não encontrado;
+- Método HTTP POST + /api/patients: A partir do método POST mais o endpoint /api/patients realiza-se com status 200 a criação de um registro de um paciente no MongoDB ou acusa-se um erro com status 400 de paciente não cadastrado;
+- Método HTTP PUT + /api/patients/:id: A partir do método PUT mais o endpoint /api/patients/:id realiza-se com status 200 a edição de um registro de um paciente especificado pelo id no MongoDB ou acusa-se um erro com status 400 de paciente não editado com sucesso;
+- Método HTTP DELETE + /api/patients/:id: A partir do método DELETE mais o endpoint /api/patients/:id realiza-se com status 200 a exclusão de um registro de um paciente especificado pelo id no MongoDB ou acusa-se um erro com status 400 de paciente não excluído.
 
 **package-lock.json e package.json:** Nesses arquivos encontra-se a indicação de quais dependências devem ser instaladas para alterações no código fonte dessa API ou mesmo para executá-la.
 
