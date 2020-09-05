@@ -1,7 +1,7 @@
 # teste_salvus
 Repositório do teste de uma aplicação para uma API do teste da Salvus.
 
-########################## Passo a passo para execução da API ##########################
+########################## Instruções para a execução da API ##########################
 
 - Utilizou-se o Node.js como plataforma para criação do servidor dessa API;
 
@@ -22,3 +22,16 @@ Repositório do teste de uma aplicação para uma API do teste da Salvus.
 - Apontando para a pasta teste_salvus executa-se pelo terminal no Visual Studio Code o comando "npm install" para instalar todas as dependências utilizadas nessa API;
 
 - Entre as dependências, se encontra o "nodemon" que é ideal para não haver a necessidade de se reiniciar manualmente o servidor após alterações no código fonte da API. No caso de apenas realizar requisições para a API não será necessário o uso do nodemon, mas se o objetivo for realizar alterações no código fonte, o nodemon pode auxiliar;
+
+- A seguir, segue a descrição de cada arquivo deste repositório:
+
+**models/Patient.js:** Na pasta models encontra-se o arquivo Patient.js com o código do model da entidade (Coleção no MongoDB) Patient, a qual possui os seguintes atributos:
+- _id: Identificador único do registro; (Não está definido no model e sim pelo próprio MongoDB)
+- nome: Nome do paciente do tipo string e tamanho máximo de 200 caracteres;
+- data_de_nascimento: Data de nascimento do paciente do tipo date;
+- doenca: Descrição da doença do paciente do tipo string e tamanho máximo de 400 caracteres;
+- tratamento: Descrição do tratamento do paciente com tipo string e tamanho máximo de 400 caracteres;
+- timestamps: Indica a data e a hora de criação e edição do registro. Na coleção se apresenta em dois registros: createdAt e updatedAt.
+
+**app.js:** Nesse arquivo encontra-se a conexão com o MongoDB e as cinco rotas solicitadas para esse teste:
+- 
