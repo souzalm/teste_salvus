@@ -30,7 +30,7 @@ Repositório do teste de uma aplicação para uma API do teste da Salvus.
 **models/Patient.js:** Na pasta models encontra-se o arquivo Patient.js com o código do model da entidade (Coleção no MongoDB) Patient, a qual possui os seguintes atributos:
 - _id: Identificador único do registro; (Não está definido no model e sim pelo próprio MongoDB)
 - nome: Nome do paciente do tipo string e tamanho máximo de 200 caracteres;
-- data_de_nascimento: Data de nascimento do paciente do tipo date;
+- data_de_nascimento: Data de nascimento do paciente do tipo date no formato MM.DD.AAAA;
 - doenca: Descrição da doença do paciente do tipo string e tamanho máximo de 400 caracteres;
 - tratamento: Descrição do tratamento do paciente com tipo string e tamanho máximo de 400 caracteres;
 - timestamps: Indica a data e a hora de criação e edição do registro. Na coleção se apresenta em dois registros: createdAt e updatedAt.
